@@ -1,2 +1,5 @@
-# stocks-analysis
-Analysis on 2017 and 2018 green energy related stocks
+# VBA of Wall Street
+## Overview of the Project
+The purpose of this project is to analyze a dozen of green-energy stocks to reveal their yearly transaction volume and yearly return to facilitate the decision to choose investment-worthy stocks. In this project two years’ of stock data (i.e. 2017, 2018) from 12 green-energy companies has been analyzed using VBA scripts. There were 3012 rows of data in each year’s of stock data associated with those 12 companies. The analysis has been done using VBA scripts in standard logical way and also by *refactoring* codes to make the run-time faster. The comparison of run-time has been discussed in the following paragraph.
+## Results
+Originally the VBA scripts were written in a straight-forward logical way where the iterations were looping around the full set of data once for each of those 12 companies. After refactoring the codes introducing a few *array* with the company tickers as index, the same result has been produced after the one iteration of the data-set for each year. The key code is shown in the following macro snapshot.
